@@ -1,0 +1,62 @@
+Idea:
+adidas have approx. 500 IT applications interconnected with each other and faces huge challenge to identify impacts on IT systems due to any change in business. Idea is to visually represent a dynamic IT landscape of organization. Also this landscape should be able to show IT systems impact of any business change happening in the organization.
+Components:
+System will have below entities
+1)	System ( This will be the IT systems/applications)
+2)	Module ( These will be the module within application)
+3)	Objects ( objects used within application/modules)
+4)	Functions ( business functionality sitting within objects, modules or applications) 
+
+There will be 3 screens in the tool.
+1)	System Admin screen ( Screen to enter system, Module, Objects and Functions master data)
+2)	Application admin screen ( screen to select module, objects and Functions level parameters from the master data entered by system admin)
+3)	Analysis screen ( Screen to see results)
+
+System Admin screen (screen to enter system level parameters):
+System Admin user should be able to do following.
+1)	User should be able to add an organization ( e.g. adidas Global IT) 
+Attribute	Examples
+Organization Name	Adidas Global IT
+
+
+2)	User should be able to add IT Systems master data
+Attribute	Examples
+IT System Name	RMA, MP, ACS etc.
+Objects	Range, model, article, order etc.
+Business Functions	Pricing, Product Creation, Forecasting, Ranging etc.
+
+
+Application Admin user should be able to do following:
+User should be able to select any 1 system and should be able to update following Information
+Attribute	Examples
+Input systems	Multiselect from available systems
+Output systems	Multiselect from available systems
+Input integration	For each input system
+Output integration	For each Output system
+Module	Global, Local etc.
+Objects	User should be able to multi select from objects master data added by system admin (e.g. Range, Model, Article, Order etc.)
+Business Functions	User should be able to multi select from Business Functions master data added by system admin ( e.g. Pricing, Product Creation, Forecasting, Ranging etc.)
+
+For each object of that application, application admin should be able to maintain following:
+Attribute	Examples
+Object Input	User or name of input system or both
+Object Output	User or name of output system or both
+Object Complexity	This will define complexity of that object ( like Simple, medium or complex)
+
+For each Business function of that application, application admin should be able to maintain following:
+Attribute	Examples
+Object Input	User or name of input system or both
+Object Output	User or name of output system or both
+Object Complexity	This will define complexity of that business function ( like Simple, medium or complex)
+Linked Objects	Objects linked with that business function ( multilist)
+
+
+1)	Analysis screen ( Screen to see results)
+This is the main screen which will be result of data entered by system admin and application admin screen. This will be the main screen and will be heart of whole tool. This will be used by organizations VP, CIO etc. and hence usability and feeling of UI is very important. A sample example is shown in the excel attached.
+User can see 3 views – 
+1)	Origination 
+2)	Zoom in inside Organization to see IT systems and their interconnection 
+3)	Zoon in inside any IT system to see modules, objects and business functions of that system
+Action:
+User should be able to select any business function on top and should be able see impacted IT systems by colour highlighting for those systems and then user should be able to zoom in to see impacted modules, objects and business functions to see impacts. An example is shown in the excel attached below.
+ 
