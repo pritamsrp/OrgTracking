@@ -1,0 +1,12 @@
+#myModal3
+{
+    top:5%;right:50%;outline:none;
+}
+a.btn[href^="#myModal"]
+{
+    display:inline-block;margin-bottom:30px;
+}
+#myModal4 .modal-dialog
+{width:75%;
+}
+@media screen and (min-width: 768px) {#myModal4 .modal-dialog{width:900px;}}

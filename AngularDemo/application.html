@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>OLT Dashboard</title>
+    <meta name="description" content="OLTApp">
+          <!-- Latest compiled and minified AngularJS -->
+    <script src="ttps://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+          <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="css/jumbotron.css">
+    <script src="js/app.js"></script>
+
+
+    </head>
+    <body ng-app="myApp">
+        <!-- Navbar-->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="olt-navbar">
+        <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class ="icon-bar"></span>
+            <span class ="icon-bar"></span>
+            <span class ="icon-bar"></span>
+            <span class ="icon-bar"></span>
+            </button>
+                <a href="" class="navbar-brand">Organization Landscape Tracking</a>
+            </div><!--NavBar Header-->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="dashboard.html">System Admin</a></li>
+                <li><a href="#appadmin">Application Admin</a></li>
+                <li><a href="analysis.html">Analysis</a></li>
+                </ul> 
+                <ul>
+                <div class="dropdown">
+                   <li> 
+                    <button class="btn btn-primary navbar-btn navbar-right dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Add Moderators</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </div><!--End Dropdown-->
+                </ul>
+            </div>
+        </div><!--End Container-->
+        </nav><!--End Navbar-->
+        
+        
+        <!--jumbotron-->
+        <div class="jumbotron">
+        <div class="container text-center">
+            <h1>Adidas Tracking page</h1>
+            <p>Welcome to Adidas Application Matching page. Please select the any desired system and update it's following
+            attributes.</p>
+            <div class="btn-group">
+            <a href="" class="btn btn-lg btn-info" >System</a>
+            <a href="" class="btn btn-lg btn-info" >Add Modules</a>
+            <a href="" class="btn btn-lg btn-info" >Add Functions</a>
+            </div>
+            
+        </div><!--End jumbotron container-->
+        </div><!--End jumbotron-->
+        
+        <form class="form-horizontal">
+            <fieldset>
+
+            <!-- Form Name -->
+                <legend>Please enter and submit the following.</legend>
+
+                <!-- Select System -->
+                <div class="form-group">
+                <label class="col-md-4 control-label" for="selectbasic">Select the name of your system:</label>
+                    <div class="col-md-5">
+                            <select id="selectsystem" name="selectsystem" class="form-control">
+                                <option value="1">adiFlex</option>
+                                <option value="2">ACS</option>
+                                <option value="">DMT</option>
+                                <option value="">GIM</option>
+                                <option value="">GSS</option>
+                                <option value="">MP</option>
+                                <option value="">NAC</option>
+                                <option value="">PDM</option>
+                                <option value="">ReebokFlex</option>
+                                <option value="">SAP-AFS</option>    
+                        </select>
+                    <!-- Multiple Checkboxes (inline) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes">Select the input system of the system you chose:</label>
+  <div class="col-md-5">
+    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+      adiFlex
+    </label>
+    <label class="checkbox-inline" for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+      ACS
+    </label>
+    <label class="checkbox-inline" for="checkboxes-2">
+      <input type="checkbox" name="checkboxes" id="checkboxes-2" value="3">
+      DMT
+    </label>
+    <label class="checkbox-inline" for="checkboxes-3">
+      <input type="checkbox" name="checkboxes" id="checkboxes-3" value="4">
+      GIM
+    </label>
+    <label class="checkbox-inline" for="checkboxes-4">
+      <input type="checkbox" name="checkboxes" id="checkboxes-4" value="5">
+      GSS
+    </label>
+    <label class="checkbox-inline" for="checkboxes-5">
+      <input type="checkbox" name="checkboxes" id="checkboxes-5" value="6">
+      MP
+    </label>
+    <label class="checkbox-inline" for="checkboxes-6">
+      <input type="checkbox" name="checkboxes" id="checkboxes-6" value="7">
+      NAC
+    </label>
+    <label class="checkbox-inline" for="checkboxes-7">
+      <input type="checkbox" name="checkboxes" id="checkboxes-7" value="">
+      PDM
+    </label>
+    <label class="checkbox-inline" for="checkboxes-8">
+      <input type="checkbox" name="checkboxes" id="checkboxes-8" value="">
+      ReebokFlex
+    </label>
+    <label class="checkbox-inline" for="checkboxes-9">
+      <input type="checkbox" name="checkboxes" id="checkboxes-9" value="">
+      SAP-AFS
+    </label>
+  </div>
+</div>
+                        <!-- Multiple Checkboxes (inline)  for output system-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="checkboxes">Select the output system of the system you chose:</label>
+  <div class="col-md-4">
+    <label class="checkbox-inline" for="checkboxes-0">
+      <input type="checkbox" name="checkboxes" id="checkboxes-0" value="1">
+      adiFlex
+    </label>
+    <label class="checkbox-inline" for="checkboxes-1">
+      <input type="checkbox" name="checkboxes" id="checkboxes-1" value="2">
+      ACS
+    </label>
+    <label class="checkbox-inline" for="checkboxes-2">
+      <input type="checkbox" name="checkboxes" id="checkboxes-2" value="3">
+      DMT
+    </label>
+    <label class="checkbox-inline" for="checkboxes-3">
+      <input type="checkbox" name="checkboxes" id="checkboxes-3" value="4">
+      GIM
+    </label>
+    <label class="checkbox-inline" for="checkboxes-4">
+      <input type="checkbox" name="checkboxes" id="checkboxes-4" value="">
+      GSS
+    </label>
+    <label class="checkbox-inline" for="checkboxes-5">
+      <input type="checkbox" name="checkboxes" id="checkboxes-5" value="">
+      MP
+    </label>
+    <label class="checkbox-inline" for="checkboxes-6">
+      <input type="checkbox" name="checkboxes" id="checkboxes-6" value="">
+      NAC
+    </label>
+    <label class="checkbox-inline" for="checkboxes-7">
+      <input type="checkbox" name="checkboxes" id="checkboxes-7" value="">
+      PDM
+    </label>
+    <label class="checkbox-inline" for="checkboxes-8">
+      <input type="checkbox" name="checkboxes" id="checkboxes-8" value="">
+      ReebokFlex
+    </label>
+    <label class="checkbox-inline" for="checkboxes-9">
+      <input type="checkbox" name="checkboxes" id="checkboxes-9" value="">
+      SAP-AFS
+    </label>
+  </div>
+</div>
+                     </div>
+                </div>
+
+            </fieldset>
+            </form>
+        <div class="container text-center">
+        <div class="btn-group">
+            <a href="" class="btn btn-lg btn-success" >Save</a>
+            <a href="" class="btn btn-lg btn-danger" >Close</a>
+            </div>
+        </div>
+    <!-- Angular-ui-bootstrap-minified script -->    
+     <script src ="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.2/ui-bootstrap-tpls.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.2/ui-bootstrap.min.js"></script>  
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>    
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
+    </body>
+</html>
