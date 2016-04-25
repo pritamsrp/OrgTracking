@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>OLT Dashboard</title>
+    <meta name="description" content="OLTApp">
+          <!-- Latest compiled and minified AngularJS -->
+    <script src="ttps://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+          <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+<!-- Optional theme -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+    
+    <link rel="stylesheet" type="text/css" href="css/jumbotron.css">
+    <script src="js/app.js"></script>
+
+
+    </head>
+    <body ng-app="myApp">
+        <!-- Navbar-->
+        <nav class="navbar navbar-inverse navbar-fixed-top" id="olt-navbar">
+        <div class="container">
+            <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
+            <span class ="icon-bar"></span>
+            <span class ="icon-bar"></span>
+            <span class ="icon-bar"></span>
+            <span class ="icon-bar"></span>
+            </button>
+                <a href="" class="navbar-brand">Organization Landscape Tracking</a>
+            </div><!--NavBar Header-->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="dashboard.html">System Admin</a></li>
+                <li><a href="#appadmin">Application Admin</a></li>
+                <li><a href="analysis.html">Analysis</a></li>
+                </ul> 
+                <ul>
+                <div class="dropdown">
+                   <li> 
+                    <button class="btn btn-primary navbar-btn navbar-right dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"><span class="glyphicon glyphicon-user" aria-hidden="true"></span><span class="caret"></span></button>
+                        <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">Profile</a></li>
+                            <li><a href="#">Settings</a></li>
+                            <li><a href="#">Add Moderators</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Log Out</a></li>
+                        </ul>
+                    </li>
+                </div><!--End Dropdown-->
+                </ul>
+            </div>
+        </div><!--End Container-->
+        </nav><!--End Navbar-->
+        
+        
+        <!--jumbotron-->
+        <div class="jumbotron">
+        <div class="container text-center">
+            <h1>adidas Tracking page</h1>
+            <p>Welcome to adidas application matching page. Please select the any desired system and update it's following
+            attributes.</p>
+            <div class="btn-group">
+            <a href="" class="btn btn-lg btn-info" >Systems</a>
+            <a href="" class="btn btn-lg btn-info" >Add Modules</a>
+            <a href="" class="btn btn-lg btn-info" >Add Functions</a>
+            </div>
+            
+        </div><!--End jumbotron container-->
+        </div><!--End jumbotron-->
+        <div class="panel panel-success">
+        <div class="panel-heading">Please select system and add its input and output atributes.</div>
+            <div class="panel-body">
+                
+                <p class="text-center text-uppercase">Select Your System:</p>
+                <div class="form-group">
+                    <div class="col-xs-offset-4 col-xs-4 ">
+                        <select class="form-control" name="color">
+                            <option value="">Choose a system</option>
+                            <option value="black">Black</option>
+                            <option value="green">Green</option>
+                            <option value="red">Red</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="white">White</option>
+                        </select>
+                    </div>
+                </div>
+               <div class="row">
+                    <div class="text-uppercase col-xs-12 col-sm-6 col-md-8">Select input attributes to your system:</div><div class="text-uppercase col-xs-6 col-md-4">Select output attrbutes from your system.</div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                    <div class="col-xs-4 ">
+                        <select class="form-control" name="color">
+                            <option value="">Choose an input system:</option>
+                            <option value="black">Black</option>
+                            <option value="green">Green</option>
+                            <option value="red">Red</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="white">White</option>
+                        </select>
+                     </div> 
+                        <div class="col-xs-offset-4 col-xs-4">
+                        <select class="form-control" name="color">
+                            <option value="">Choose an output system</option>
+                            <option value="black">Black</option>
+                            <option value="green">Green</option>
+                            <option value="red">Red</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="white">White</option>
+                        </select>
+                     </div> 
+                </div>
+                 </div>
+                <div class="row">
+                    <div class="text-uppercase col-xs-12 col-sm-6 col-md-8">Select input integration to your system:</div>
+                    <div class="text-uppercase col-xs-6 col-md-4">Select output integration from your system.</div>
+                </div>
+                                <div class="row">
+                    <div class="form-group">
+                    <div class="col-xs-4 ">
+                        <select class="form-control" name="color">
+                            <option value="null">Choose an input integration</option>
+                            <option value="black">Black</option>
+                            <option value="green">Green</option>
+                            <option value="red">Red</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="white">White</option>
+                        </select>
+                     </div> 
+                        <div class="col-xs-offset-4 col-xs-4">
+                        <select class="form-control" name="color">
+                            <option value="null">Choose an output integration</option>
+                            <option value="black">Black</option>
+                            <option value="green">Green</option>
+                            <option value="red">Red</option>
+                            <option value="yellow">Yellow</option>
+                            <option value="white">White</option>
+                        </select>
+                     </div> 
+                </div>
+                 </div>
+                <li>
+                <button type="button" class="btn btn-success col-xs-offset-5 ">Save</button>
+                <button type="button" class="btn btn-danger">Reset</button>
+                </li>
+            </div>
+             <div class="panel-footer">This will contain the above content..</div>
+                <table class="table table-bordered">
+                        ...
+                </table>
+        </div>
+        
+        
+        
+    <!-- Angular-ui-bootstrap-minified script -->    
+     <script src ="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.2/ui-bootstrap-tpls.min.js"></script> <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.2/ui-bootstrap.min.js"></script>  
+    <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>    
+    <!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>    
+    </body>
+</html>
