@@ -1,0 +1,23 @@
+Scripts for the mongo shell are written in JavaScript. To execute the file on the server, this JavaScript (.js) file has to be specified to a mongo shell instance.
+
+Following are the steps to run a script file
+1. Open command prompt
+2. In the command prompt, navigate to the directory where mongo db binaries are stored (e.g. D:\Programs\MongoDB\Server\3.2\bin)
+3. To execute CommissionDetailCreate.js stored at location "D:\Commission Data", execute the following command from the command prompt
+
+	D:\Programs\MongoDB\Server\3.2\bin> mongo.exe "D:\Commission Data\CommissionDetailCreate.js"
+
+   This will run the instructions in the CommissionDetailCreate.js file and perform actions accordingly.
+
+Following are the files and the their uses
+------------------------------------------
+CommissionDetailCreate.js	 : Creates collection 'CommissionsDetails' in mongo db
+CommissionDetailTestData.js	 : Adds test data to collection 'CommissionsDetails'
+CommissionSummaryCreate.js	 : Creates collection 'CommissionsSummary' in mongo db
+CommissionSummaryTestData.js : Adds test data to collection 'CommissionsSummary'
+
+(Please note the the mongo db server should be running to execute the above command)
+
+References:
+1. https://docs.mongodb.com/manual/tutorial/write-scripts-for-the-mongo-shell/
+2. https://docs.mongodb.com/manual/core/server-side-javascript/#running-js-scripts-in-mongo-on-mongod-host
